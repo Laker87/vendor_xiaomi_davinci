@@ -860,7 +860,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt
 
 PRODUCT_PACKAGES += \
-    libplatformconfig \
     vendor.qti.hardware.fm@1.0 \
     SoterService \
     CACertService \
