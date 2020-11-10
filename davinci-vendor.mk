@@ -114,6 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
+    vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@1.2-service \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/xiaomi/davinci/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
@@ -237,6 +238,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/davinci/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
@@ -427,6 +429,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
+    vendor/xiaomi/davinci/proprietary/vendor/lib/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.nqx.default.hw.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
@@ -758,11 +761,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/mi.motor.daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mi.motor.daemon.so \
+    vendor/xiaomi/davinci/proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.nqx.default.hw.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.0.so \
+    vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.1.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
